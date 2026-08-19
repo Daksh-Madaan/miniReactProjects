@@ -26,6 +26,7 @@ const Passgen = () => {
     passRef.current?.select();
     window.navigator.clipboard.writeText(pass);
   },[pass])
+  
   return (
     <div className="text-4xl p-2 flex flex-col justify-center gap-2 items-center border-2 rounded-2xl border-dashed border-gray-400 m-3">
         <h1 className='text-3xl text-center italic'>Passgen</h1>

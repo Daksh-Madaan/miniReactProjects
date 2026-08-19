@@ -1,8 +1,13 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 
 const Counter = () => {
     const [count,setCount] = useState(0);
-  
+     
+    useEffect(()=> {
+      console.log(`Count Changed to ${count}`);
+      return ()=>{console.log("Clean Up")}
+    })
+
     const plus = () => {
         /*
         setCount(count + 1);
