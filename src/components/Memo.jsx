@@ -12,7 +12,10 @@ const Memo = () => {
 
   //const selectedItem = items.find((item) => item.isSelected);
   
-  const selectedItem = useMemo(()=>{items.find((item) => item.isSelected)},[items])
+  const selectedItem = useMemo(()=>{
+      return items.find((item) => item.isSelected)
+
+    },[items])
   
   return (
     <div className="text-4xl p-2 flex flex-col justify-center gap-2 items-center border-2 rounded-2xl border-dashed border-gray-400 m-3">
