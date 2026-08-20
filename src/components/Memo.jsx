@@ -6,7 +6,6 @@ const initialItems = new Array(29_999_999).fill(0).map((_, i) => ({
 }));
 const Memo = () => {
   
-
   const [count, setCount] = useState(0);
   const [items] = useState(initialItems);
 
@@ -19,7 +18,7 @@ const Memo = () => {
   
   return (
     <div className="text-4xl p-2 flex flex-col justify-center gap-2 items-center border-2 rounded-2xl border-dashed border-gray-400 m-3">
-      <h1 className='text-3xl text-center italic'>useMemo</h1>
+      <h1 className='text-3xl italic'>useMemo</h1>
 
       <h1>Count: {count}</h1>
       <h2>Selected Item: {selectedItem?.id}</h2>

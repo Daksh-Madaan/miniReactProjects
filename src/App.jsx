@@ -3,6 +3,7 @@ import Counter from './components/Counter'
 import Bgchanger from './components/Bgchanger'
 import Passgen from './components/Passgen'
 import Memo from './components/Memo'
+import Space from './components/Space'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Bgchanger />
       <Passgen />
       <Memo />
+      <Space/>
     </div>
   )
 }
